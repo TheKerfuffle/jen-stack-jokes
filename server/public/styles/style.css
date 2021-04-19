@@ -1,3 +1,6 @@
+/* h4 and p tags automatically have WAY too much margin, 
+rather than just changing it to another tag,
+I formatted the margins */
 h4 {
     margin: 5px;
 }
@@ -16,7 +19,7 @@ header {
     background-color: maroon;
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    padding: 1rem;
+    padding: .4rem;
 }
 
 main {
