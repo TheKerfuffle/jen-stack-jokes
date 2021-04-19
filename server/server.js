@@ -31,6 +31,13 @@ let jokes = [
     whoseJoke: "Scott",
     jokeQuestion: "I went to the zoo the other day, it had one dog...",
     punchLine: "It was a shih tzu."
+  },
+  {
+    // Seriously though... This joke is in all of his movies
+    // and shows up at least once in each show he writes for.
+    whoseJoke: "Aaron Sorkin",
+    jokeQuestion: "Why do the french only ever have one egg",
+    punchLine: "Because one egg is un oeuf"
   }
 ];
 

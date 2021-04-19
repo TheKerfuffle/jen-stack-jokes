@@ -12,7 +12,7 @@ function onReady() {
 
 function sendJoke() {
     
-    // Create a new package to send to the server
+    // Create a new object to send to the server
     let newJoke = {
         whoseJoke: $('#whoseJokeIn').val(),
         jokeQuestion: $('#questionIn').val(),
@@ -57,9 +57,10 @@ function getJokes() {
 }
 
 function render(allJokes) {
+    // Empty the Div
     $('#outputDiv').empty();
 
     for (let joke of allJokes) {
-        $('#outputDiv').append(`<h4>${joke.jokeQuestion}</h4><p>${joke.punchLine}</p><p>- ${joke.whoseJoke}</p>`);
+        $('#outputDiv').append(`<h4>${joke.jokeQuestion}</h4><p>${joke.punchLine}</p><p>- ${joke.whoseJoke}</p><p> ---------- </p>`);
     }
 }
