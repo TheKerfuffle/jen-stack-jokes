@@ -15,20 +15,20 @@ function sendJoke() {
     // Create a new package to send to the server
     let newJoke = {
         whoseJoke: $('#whoseJokeIn').val(),
-        jokeQuestion: $('#jokeQuestion').val(),
-        punchLine: $('#punchLine').val(),
+        jokeQuestion: $('#questionIn').val(),
+        punchLine: $('#punchlineIn').val(),
     }
 
     // Clear inputs
-    $('#whoseJokeIn').val()
-    $('#jokeQuestion').val()
-    $('#punchLine').val()
+    $('#whoseJokeIn').val();
+    $('#questionIn').val();
+    $('#punchlineIn').val();
     
     // POST our new joke
     $.ajax({
         method: 'POST',
         url: '/jokes',
-        data: newValues,
+        data: newJoke,
     })
     .then(function (response) {
         getJokes();
