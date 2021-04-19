@@ -56,7 +56,6 @@ app.post('/jokes', (req, res) => {
   res.sendStatus(201);
 })
 
-
 // GET plumbing
 app.get( '/jokes', (req, res)  => {
   res.send( jokes );
