@@ -10,7 +10,7 @@ function onReady() {
 
 
 function getJokes() {
-    
+
     $.ajax({
         method: 'GET',
         url: '/jokes'
@@ -22,4 +22,12 @@ function getJokes() {
         console.log('error from server', error);
         alert('sorry, could not get jokes. Try again later.');
     })
+}
+
+function render(allJokes) {
+    $('#outputDiv').empty();
+
+    for (let joke of allJokes) {
+        $('#outputDiv').append(`<h4>${joke.jokeQuestion}</h4><p>${joke.punchLine}</p><p>- ${joke.whoseJoke}</p>`);
+    }
 }
